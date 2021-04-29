@@ -1,0 +1,18 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: org.mockito:mockito-core
+    versions:
+    - 3.6.28
+    - 3.7.7
+  - dependency-name: org.assertj:assertj-core
+    versions:
+    - 3.18.1
+  - dependency-name: com.fasterxml.jackson:jackson-bom
+    versions:
+    - 2.12.0
